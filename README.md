@@ -17,6 +17,7 @@ As the 3rd step intends, im in linux so ig ima skip this one.
 
 as it says, i went to Godot, fill the forms, chose compatibility.
 ![3](assets/readme/createproject.png)
+
 AND IM IN AN ENGINE ALREADY. (im scared :3)
 
 ![4](assets/readme/4.png)
