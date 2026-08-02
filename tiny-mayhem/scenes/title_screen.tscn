@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://goych2cdtjxf"]
+
+[ext_resource type="Texture2D" uid="uid://b3855vqn0fk6w" path="res://r2_06108e01-522d-4039-b360-357e8c96f7c3.png" id="1_fgkus"]
+[ext_resource type="Script" uid="uid://dmplexot8ko0t" path="res://scenes/title_screen.gd" id="1_sa3yf"]
+
+[node name="TitleScreen" type="Node2D" unique_id=836774837]
+script = ExtResource("1_sa3yf")
+
+[node name="Background" type="TextureRect" parent="." unique_id=72833941]
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 1920.0
+offset_bottom = 1078.0
+texture = ExtResource("1_fgkus")
+expand_mode = 1
+
+[node name="Title" type="RichTextLabel" parent="." unique_id=1204023896]
+offset_left = 186.0
+offset_top = 146.0
+offset_right = 1234.0
+offset_bottom = 425.0
+theme_override_constants/outline_size = 60
+theme_override_font_sizes/normal_font_size = 161
+text = "TinyMayhem"
+
+[node name="Start" type="Button" parent="." unique_id=203877749]
+offset_left = 441.0
+offset_top = 459.0
+offset_right = 980.0
+offset_bottom = 576.0
+theme_override_constants/outline_size = 27
+theme_override_font_sizes/font_size = 63
+text = "Start Game"
+
+[node name="Settings" type="Button" parent="." unique_id=1054691256]
+offset_left = 440.0
+offset_top = 588.0
+offset_right = 981.0
+offset_bottom = 706.0
+theme_override_constants/outline_size = 27
+theme_override_font_sizes/font_size = 63
+text = "Settings"
+
+[node name="Quit" type="Button" parent="." unique_id=30662404]
+offset_left = 439.0
+offset_top = 718.0
+offset_right = 981.0
+offset_bottom = 836.0
+theme_override_constants/outline_size = 27
+theme_override_font_sizes/font_size = 63
+text = "Quit Game"
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

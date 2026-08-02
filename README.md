@@ -30,3 +30,8 @@ Then, started my real work. I took a 2D Screen node and named it "TitleScreen". 
 ![6](assets/readme/6.png)
 
 Time to create a button!
+TIme to give the titlescreen 3 buttons; Start Game, Settings and Quit Game.
+Programmed the Start Button to go to level scene and the quit button to quit the game. 
+I'll do the settings one later.
+![7](assets/readme/7.png)
+Programmed em. Time to commit and push!
