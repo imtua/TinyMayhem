@@ -21,3 +21,12 @@ as it says, i went to Godot, fill the forms, chose compatibility.
 AND IM IN AN ENGINE ALREADY. (im scared :3)
 
 ![4](assets/readme/4.png)
+
+hey, it was so easy to setup. 
+i had to install godot super wakatime and changed mode into viewport and aspect into keep. 
+![5](assets/readme/5.png)
+
+Then, started my real work. I took a 2D Screen node and named it "TitleScreen". Under it, I took a TextureRect node and named it "Background", got a WarioWare wallpaper from Internet and put it as the background. Then took a RichTextLabel node and named it "Title", under that Font-size: 300, Normal ticked off, Outline: 60, Title is "TinyMayhem".
+![6](assets/readme/6.png)
+
+Time to create a button!
