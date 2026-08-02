@@ -40,3 +40,4 @@ hey, after some time of work, i made the level scene, where how many lifes you h
 ![8](assets/readme/8.png)
 time to commit and push!
 
+and just coded howd the dumb designs would work, so im good
