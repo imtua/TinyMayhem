@@ -50,5 +50,14 @@ theme_override_constants/outline_size = 27
 theme_override_font_sizes/font_size = 63
 text = "Quit Game"
 
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=178128356]
+offset_left = 1731.0
+offset_top = 1040.0
+offset_right = 1987.0
+offset_bottom = 1093.0
+theme_override_constants/outline_size = 13
+theme_override_font_sizes/normal_font_size = 22
+text = "By Imtiaz Ahmed"
+
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

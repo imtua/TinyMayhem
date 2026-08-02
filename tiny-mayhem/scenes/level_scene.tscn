@@ -1,3 +1,85 @@
 [gd_scene format=3 uid="uid://dkxcsmhlh22em"]
 
+[ext_resource type="Texture2D" uid="uid://b3855vqn0fk6w" path="res://r2_06108e01-522d-4039-b360-357e8c96f7c3.png" id="1_386oa"]
+[ext_resource type="Texture2D" uid="uid://c2cndxd2sjfc5" path="res://icon.svg" id="2_bl4ss"]
+
 [node name="level_scene" type="Node2D" unique_id=146208482]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=834527315]
+offset_right = 1921.0
+offset_bottom = 1080.0
+texture = ExtResource("1_386oa")
+expand_mode = 1
+
+[node name="HeartContainer1" type="HBoxContainer" parent="." unique_id=1560311673]
+offset_left = 181.0
+offset_top = 273.0
+offset_right = 371.0
+offset_bottom = 463.0
+
+[node name="Heart" type="TextureRect" parent="HeartContainer1" unique_id=1434114553]
+layout_mode = 2
+texture = ExtResource("2_bl4ss")
+expand_mode = 2
+
+[node name="HeartContainer2" type="HBoxContainer" parent="." unique_id=353775358]
+offset_left = 396.0
+offset_top = 273.0
+offset_right = 586.0
+offset_bottom = 463.0
+
+[node name="Heart" type="TextureRect" parent="HeartContainer2" unique_id=297701343]
+layout_mode = 2
+texture = ExtResource("2_bl4ss")
+expand_mode = 2
+
+[node name="HeartContainer3" type="HBoxContainer" parent="." unique_id=83934472]
+offset_left = 611.0
+offset_top = 273.0
+offset_right = 801.0
+offset_bottom = 463.0
+
+[node name="Heart" type="TextureRect" parent="HeartContainer3" unique_id=1397592032]
+layout_mode = 2
+texture = ExtResource("2_bl4ss")
+expand_mode = 2
+
+[node name="HeartContainer4" type="HBoxContainer" parent="." unique_id=223732956]
+offset_left = 825.0
+offset_top = 272.0
+offset_right = 1015.0
+offset_bottom = 462.0
+
+[node name="Heart" type="TextureRect" parent="HeartContainer4" unique_id=2107429668]
+layout_mode = 2
+texture = ExtResource("2_bl4ss")
+expand_mode = 2
+
+[node name="HeartContainer5" type="HBoxContainer" parent="." unique_id=447432506]
+offset_left = 1040.0
+offset_top = 273.0
+offset_right = 1230.0
+offset_bottom = 463.0
+
+[node name="Heart" type="TextureRect" parent="HeartContainer5" unique_id=2083909891]
+layout_mode = 2
+texture = ExtResource("2_bl4ss")
+expand_mode = 2
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=816972770]
+offset_left = 576.0
+offset_top = 527.0
+offset_right = 841.0
+offset_bottom = 635.0
+theme_override_constants/outline_size = 18
+theme_override_font_sizes/normal_font_size = 70
+text = "Level #"
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=1309417717]
+offset_left = 639.0
+offset_top = 964.0
+offset_right = 780.0
+offset_bottom = 1083.0
+theme_override_constants/outline_size = 24
+theme_override_font_sizes/normal_font_size = 90
+text = "0.0"

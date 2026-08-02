@@ -35,3 +35,8 @@ Programmed the Start Button to go to level scene and the quit button to quit the
 I'll do the settings one later.
 ![7](assets/readme/7.png)
 Programmed em. Time to commit and push!
+
+hey, after some time of work, i made the level scene, where how many lifes you have, how much time you left and what level are you in is showed. Then it crashed, so i made it again. lol :\
+![8](assets/readme/8.png)
+time to commit and push!
+
