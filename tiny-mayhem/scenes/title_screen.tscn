@@ -1,63 +1,53 @@
-[gd_scene format=3 uid="uid://goych2cdtjxf"]
+[gd_scene format=3 uid="uid://d1nwebswpqjls"]
 
-[ext_resource type="Texture2D" uid="uid://b3855vqn0fk6w" path="res://r2_06108e01-522d-4039-b360-357e8c96f7c3.png" id="1_fgkus"]
-[ext_resource type="Script" uid="uid://dmplexot8ko0t" path="res://scenes/title_screen.gd" id="1_sa3yf"]
+[ext_resource type="Texture2D" uid="uid://iiq56xoqkg0t" path="res://assets/Untitled design.png" id="1_fgkus"]
+[ext_resource type="Script" uid="uid://bcjj5cpbhy076" path="res://scripts/button.gd" id="2_sa3yf"]
 
-[node name="TitleScreen" type="Node2D" unique_id=836774837]
-script = ExtResource("1_sa3yf")
+[node name="Title Screen" type="Node2D" unique_id=654621404]
 
-[node name="Background" type="TextureRect" parent="." unique_id=72833941]
-offset_left = 1.0
-offset_top = 1.0
+[node name="TextureRect" type="TextureRect" parent="." unique_id=245629293]
 offset_right = 1920.0
-offset_bottom = 1078.0
+offset_bottom = 1080.0
 texture = ExtResource("1_fgkus")
-expand_mode = 1
 
-[node name="Title" type="RichTextLabel" parent="." unique_id=1204023896]
-offset_left = 186.0
-offset_top = 146.0
-offset_right = 1234.0
-offset_bottom = 425.0
-theme_override_constants/outline_size = 60
-theme_override_font_sizes/normal_font_size = 161
-text = "TinyMayhem"
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=630178850]
+offset_left = 9.0
+offset_top = -77.0
+offset_right = 1924.0
+offset_bottom = 554.0
+theme_override_constants/outline_size = 40
+theme_override_font_sizes/normal_font_size = 148
+text = "
+TinyMayhem"
+horizontal_alignment = 1
 
-[node name="Start" type="Button" parent="." unique_id=203877749]
-offset_left = 441.0
-offset_top = 459.0
-offset_right = 980.0
-offset_bottom = 576.0
-theme_override_constants/outline_size = 27
-theme_override_font_sizes/font_size = 63
-text = "Start Game"
+[node name="Button" type="Button" parent="." unique_id=2043184780]
+offset_left = 813.0
+offset_top = 502.0
+offset_right = 1121.0
+offset_bottom = 588.0
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 45
+text = "Start"
+script = ExtResource("2_sa3yf")
 
-[node name="Settings" type="Button" parent="." unique_id=1054691256]
-offset_left = 440.0
-offset_top = 588.0
-offset_right = 981.0
-offset_bottom = 706.0
-theme_override_constants/outline_size = 27
-theme_override_font_sizes/font_size = 63
+[node name="Button2" type="Button" parent="." unique_id=1469586988]
+offset_left = 813.0
+offset_top = 607.0
+offset_right = 1121.0
+offset_bottom = 693.0
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 45
 text = "Settings"
 
-[node name="Quit" type="Button" parent="." unique_id=30662404]
-offset_left = 439.0
-offset_top = 718.0
-offset_right = 981.0
-offset_bottom = 836.0
-theme_override_constants/outline_size = 27
-theme_override_font_sizes/font_size = 63
-text = "Quit Game"
+[node name="Button3" type="Button" parent="." unique_id=1603042628]
+offset_left = 813.0
+offset_top = 711.0
+offset_right = 1121.0
+offset_bottom = 797.0
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 45
+text = "Quit
+"
 
-[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=178128356]
-offset_left = 1731.0
-offset_top = 1040.0
-offset_right = 1987.0
-offset_bottom = 1093.0
-theme_override_constants/outline_size = 13
-theme_override_font_sizes/normal_font_size = 22
-text = "By Imtiaz Ahmed"
-
-[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
